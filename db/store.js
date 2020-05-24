@@ -1,5 +1,3 @@
-// create uniqe Ids each note
-
 var notesArray =[
     {
         title: "Title",
