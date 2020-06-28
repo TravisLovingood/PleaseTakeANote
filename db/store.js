@@ -1,4 +1,4 @@
-var notesArray =[
+var store =[
     {
         title: "Title",
         text: "Text"  
