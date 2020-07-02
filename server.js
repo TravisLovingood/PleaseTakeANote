@@ -6,9 +6,9 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
  
-
+//Set up body parsing, static and route middleware
 app.use(bodyParser.json())
  
 require("./routes/apiroutes")(app);
