@@ -1,8 +1,9 @@
 const util = require("util");
 const fs = require("fs");
-// Package to create ids
-var uuid = require('uuid');
-const uuidv1 = require("uuid/v1");
+// var uuid = require('uuid');
+// const uuidv1 = require("uuid/v1");
+const { v1: uuidv1 } = require('uuid'); // new version
+
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -10,26 +11,32 @@ class Store {
     read(){
         return readFileAsync("db/db.json","utf8");
     }
+
     write(note){
         return writeFileAsync("db/db.json", JSON.stringify(note))
     }
+
     getNotes(){
         return this.read().then((notes) => {
             let parsedNotes;
+            
+            
             try{
                 parsedNotes = [].concat(JSON.parse(notes));
             } catch (err){
                 parsedNotes = [];
             }
+
             return parsedNotes;
         });
     }
+    
     addNote(note){
         const {title, text} = note;
         if (!title || !test){
             throw new Error("Hey no blank notes!");
         }
-        const newNote = {title, text, id:uuidv1()};
+        const newNote = {title, text, id:uuid.v1()};
           //get all notes, add the one with that id, and re write all notes
         return this.getNotes()
         // Spread attributes ( ... ) to call the previous notes
@@ -47,3 +54,14 @@ class Store {
 }
 
 module.exports = new Store();
+
+// import { applyMiddleware, createStore, } from ‘redux’;
+// import createSagaMiddleware from ‘redux-saga’;
+// import rootReducer from ‘./reducers/index’;
+// import rootSaga from ‘./sagas/index’;
+// import { composeWithDevTools } from ‘redux-devtools-extension’;
+// const sagaMiddleware = createSagaMiddleware();
+// const store = createStore(
+// rootReducer,
+// composeWithDevTools(applyMiddleware(sagaMiddleware)));
+// sagaMiddleware.run(rootSaga);
