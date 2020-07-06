@@ -1,9 +1,9 @@
 
-# Employee Template engine
+# Please Take A Note
 
 ## Description
-
-A team generator command line application that will prompt the user for information about there team members. The user can input any number of team members. This app will also pass all unit tests and will create an HTML file that displays a nicely formatted team roster based on the information provided by the user.
+<!-- ![Note taker](./pics/noteTaker.png) -->
+A basic note taker app the uses Node.js and express to add, save, and delete notes with local-storage.
 
 ## Table of Contents 
 
@@ -20,7 +20,9 @@ A team generator command line application that will prompt the user for informat
 
 ## Usage
 
-*To be Added*
+Run 'npm install' in an new terminal.
+
+Run 'node server.js'.
 
 ## License
 
