@@ -1,10 +1,4 @@
-// const express = require('express');
-// const apiRoutes = require("./routes/apiRoutes");
-// const htmlRoutes = require("./routes/htmlRoutes");
-// const bodyParser = require('body-parser');
-// var path = require("path");
-// var passport = require("passport")
-
+const bodyParser = require('body-parser');
 // Initialize the app and create a port
 const express = require("express");
 const apiRoutes = require("./routes/apiRoutes");
@@ -17,6 +11,7 @@ const PORT = process.env.PORT || 8080;
 // Set up body parsing, static, and route middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
 app.use(express.static("public"));
 app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
