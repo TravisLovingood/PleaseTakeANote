@@ -1,8 +1,8 @@
 const bodyParser = require('body-parser');
 // Initialize the app and create a port
 const express = require("express");
-const apiRoutes = require("./routes/apiRoutes");
-const htmlRoutes = require("./routes/htmlRoutes");
+const apiRoutes = require("./routes/apiroutes");
+const htmlRoutes = require("./routes/htmlroutes");
 
 // Initialize the app and create a port
 const app = express();
