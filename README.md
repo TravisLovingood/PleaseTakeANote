@@ -25,10 +25,10 @@ Open a new terminal and run 'npm install'.
 
 ## License
 
-This project is licensed under the Oh Yeah License.
+This project is licensed has no License.
   
 ## Questions
 
 If you have any questions about the repo, open an issue or contact directly at [PleaseTakeANote]( https://travislovingood.github.io/PleaseTakeANote/).
 
-[My Portfolio](https://travislovingood.github.io/Portfolio/).
+Also please take a look at [My Portfolio](https://travislovingood.github.io/Portfolio/).
