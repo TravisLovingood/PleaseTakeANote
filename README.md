@@ -1,10 +1,10 @@
 
-# Please Take A Note
+# PleaseTakeANote
 
 ## Description
-<!-- ![Note taker](./pics/noteTaker.png) -->
-A basic note taker app the uses Node.js and express to add, save, and delete notes with local-storage.
 
+A basic note taker app that uses Node.js and express to add, save, and delete notes. This application is deployed using Heroku.
+![Note taker](./pics/example.png)
 ## Table of Contents 
 
 * [Usage](#usage)
@@ -17,10 +17,11 @@ A basic note taker app the uses Node.js and express to add, save, and delete not
 
 
 ## Usage
-  
+Just go to [PleaseTakeANote](https://please-take-a-note.herokuapp.com/) start a note, add a title, a body, save, and enjoy!
+
 ## Installation
 
-Run 'npm install' in an new terminal.
+Open a new terminal and run 'npm install'.
 
 ## License
 
